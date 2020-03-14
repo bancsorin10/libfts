@@ -9,6 +9,11 @@ int main()
 	printf("%s\n", ft_strcat(dest, src));
 	printf("%s\n", (ft_isalpha(dest[4]) ? "o is a letter" : "impossible"));
 	printf("0 is %s\n", (ft_isdigit('0') ? "a digit" : "not a digit"));
+	printf("0 is %s\n", (ft_isalnum('0') ? "alnum" : "not alnum"));
+	printf("0 is %s\n", (ft_isascii('0') ? "ascii" : "not ascii"));
+	printf("0 is %s\n", (ft_isprint('0') ? "print" : "not print"));
+	printf("upper case of a is %c\n", ft_toupper('a'));
+	printf("lower case of A is %c\n", ft_tolower('a'));
 	ft_bzero(dest, sizeof(dest));
 	ft_bzero(src, sizeof(src));
 	return (0);

@@ -4,9 +4,9 @@ section .text
 
 ft_isdigit:
 	cmp dil, 0x30	; compare with 0
-	jb false
+	jl false
 	cmp dil, 0x39	; compare with 9
-	ja false
+	jg false
 
 	true:
 		mov ax, 1
