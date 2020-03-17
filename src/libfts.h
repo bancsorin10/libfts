@@ -14,6 +14,10 @@ extern int	ft_isascii(int c);
 extern int	ft_isprint(int c);
 extern int	ft_toupper(int c);
 extern int	ft_tolower(int c);
+extern int	ft_puts(const char *s);
+extern int	ft_strlen(const char *s);
+extern void	*ft_memset(char *s, int c, size_t n);
+extern void	*ft_memcpy(char *dest, char *src, size_t n);
 
 
 #endif

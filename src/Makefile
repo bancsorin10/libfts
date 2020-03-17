@@ -13,6 +13,10 @@ nasm:
 	nasm -felf64 ft_isprint.s
 	nasm -felf64 ft_toupper.s
 	nasm -felf64 ft_tolower.s
+	nasm -felf64 ft_puts.s
+	nasm -felf64 ft_strlen.s
+	nasm -felf64 ft_memset.s
+	nasm -felf64 ft_memcpy.s
 
 clean:
 	rm -f *.o

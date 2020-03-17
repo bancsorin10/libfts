@@ -1,4 +1,5 @@
 #include "libfts.h"
+#include <string.h>
 
 int main()
 {
@@ -14,7 +15,12 @@ int main()
 	printf("0 is %s\n", (ft_isprint('0') ? "print" : "not print"));
 	printf("upper case of a is %c\n", ft_toupper('a'));
 	printf("lower case of A is %c\n", ft_tolower('a'));
+	printf("lenght of word abracadabra is %d\n", ft_strlen("abracadabra"));
 	ft_bzero(dest, sizeof(dest));
 	ft_bzero(src, sizeof(src));
+	ft_memset(src, 'a', 6);
+	printf("memsetted to a %s\n", src);
+	ft_memcpy(dest, src, 6);
+	printf("used memcpy: %s\n", dest);
 	return (0);
 }
